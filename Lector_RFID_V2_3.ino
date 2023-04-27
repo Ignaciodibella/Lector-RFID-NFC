@@ -1,85 +1,76 @@
 /*
 Lector RFID.
 V2.3
-Incluye sonido de aceptación o rechado de tarjeta así como luz indicativa de ello (verde/roja)
+Incluye: 
+ - Sonido de aceptación o rechazo de tarjeta 
+ - Luz indicativa (verde/roja) según concoordancia con el UDI harcodeado como aceptado.
 
 */
 
 #include <SPI.h>
 #include <MFRC522.h>
 
-#define RST_PIN	9    //Pin 9 para el reset del RC522
-#define SS_PIN	10   //Pin 10 para el SS (SDA) del RC522
-MFRC522 mfrc522(SS_PIN, RST_PIN); //Creamos el objeto para el RC522
+//Asignación de Pines:
+#define RST_PIN 9
+#define SS_PIN 10
+MFRC522 mfrc522(SS_PIN, RST_PIN);  //Creación de Objeto RC522.
 
 const int buzzer = 3;
 const int led_verde = 6;
 const int led_rojo = 5;
 
-String uid = "";
-String uid_aceptado = "620b265";
+String uid = "";                  //String para almacenar UID.
+String uid_aceptado = "620b265";  //Harcodeado, la idea es que este dato venga de la BD en la próxima versión.
 
 void setup() {
-	Serial.begin(9600); //Iniciamos la comunicación  serial
-	SPI.begin();        //Iniciamos el Bus SPI
-	mfrc522.PCD_Init(); // Iniciamos  el MFRC522
-	Serial.println("Lectura del UID");
+  Serial.begin(9600);
+  SPI.begin();
+  mfrc522.PCD_Init();
+  Serial.println("Lectura del UID");
   pinMode(buzzer, OUTPUT);
   pinMode(led_verde, OUTPUT);
   pinMode(led_rojo, OUTPUT);
 }
 
 void loop() {
-	// Revisamos si hay nuevas tarjetas  presentes
-	if ( mfrc522.PICC_IsNewCardPresent()) 
-        {  
-  		//Seleccionamos una tarjeta
-            if ( mfrc522.PICC_ReadCardSerial()) 
-            {
-                  // Enviamos serialemente su UID
-                  Serial.print("Card UID:");
-                  for (byte i = 0; i < mfrc522.uid.size; i++) {
-                          Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
-                          Serial.print(mfrc522.uid.uidByte[i], HEX);
-                          uid = uid + String(mfrc522.uid.uidByte[i],HEX);
-                  } 
-                  Serial.println();
-                  Serial.println(uid);
-                  
-                  if (uid == uid_aceptado)
-                  {
-                    noTone(buzzer);
-                    delay(300); //Delay entre leer tarjeta y sonar.
-                    tone(buzzer, 1900); //el segundo parámetro indica frecuencia. A mayor valor mas agudo y a menos mas grave.
-                    delay(200); // Duración del pitido
-                    
-                    digitalWrite(led_verde , HIGH);   
-                    
-                    noTone(buzzer);
-                    delay(1000);
+  //Buscar tarjetas apoyadas:
+  if (mfrc522.PICC_IsNewCardPresent()) {
+    //Seleccionamos la tarjeta
+    if (mfrc522.PICC_ReadCardSerial()) {
+      // Enviamos serialemente su UID
+      Serial.print("Card UID:");
+      for (byte i = 0; i < mfrc522.uid.size; i++) {
+        Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");  //Esto formatea los dígitos hexa del UID de a pares separados por un espacio (para mejor legibilidad)
+        Serial.print(mfrc522.uid.uidByte[i], HEX);                 //Pasa el UID a hexa.
+        uid = uid + String(mfrc522.uid.uidByte[i], HEX);           //Tomo cada dígito y los concateno para formar el UDI y hacer consultas despues (pregunta a la BD a futuro)
+      }
+      Serial.println();
 
-                    digitalWrite(led_verde , LOW);    
-                    delay(1000);                   
-                  }
-                  else{
-                    noTone(buzzer);
-                    delay(300); //Delay entre leer tarjeta y sonar.
-                    tone(buzzer, 400); //el segundo parámetro indica frecuencia. A mayor valor mas agudo y a menos mas grave.
-                    delay(200); // Duración del pitido
+      if (uid == uid_aceptado) {
+        alerta(1900, led_verde)
+      } else {
+        alerta(400, led_rojo)
+      }
 
-                    digitalWrite(led_rojo , HIGH); 
+      uid = "";
 
-                    noTone(buzzer);
-                    delay(1000);
+      // Terminamos la lectura de la tarjeta  actual
+      mfrc522.PICC_HaltA();
+    }
+  }
+}
 
-                    digitalWrite(led_rojo , LOW);    
-                    delay(1000);
-                  }
-                  
-                  uid = "";
+void alerta(frec_pitido, led) {
+  noTone(buzzer);
+  delay(300);                 //Delay entre leer tarjeta y sonar.
+  tone(buzzer, frec_pitido);  //el segundo parámetro indica frecuencia. A mayor valor mas agudo y a menor mas grave el pitido.
+  delay(200);                 // Duración del pitido.
 
-                  // Terminamos la lectura de la tarjeta  actual
-                  mfrc522.PICC_HaltA();         
-            }      
-	}	
+  digitalWrite(led, HIGH);
+
+  noTone(buzzer);
+  delay(1000);
+
+  digitalWrite(led, LOW);
+  delay(1000);
 }
