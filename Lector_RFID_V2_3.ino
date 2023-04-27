@@ -26,7 +26,7 @@ void setup() {
   Serial.begin(9600);
   SPI.begin();
   mfrc522.PCD_Init();
-  Serial.println("Lectura del UID");
+  //Serial.println("Lectura del UID");
   pinMode(buzzer, OUTPUT);
   pinMode(led_verde, OUTPUT);
   pinMode(led_rojo, OUTPUT);
@@ -38,7 +38,7 @@ void loop() {
     //Seleccionamos la tarjeta
     if (mfrc522.PICC_ReadCardSerial()) {
       // Enviamos serialemente su UID
-      Serial.print("Card UID:");
+      //Serial.print("Card UID:");
       for (byte i = 0; i < mfrc522.uid.size; i++) {
         Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");  //Esto formatea los dígitos hexa del UID de a pares separados por un espacio (para mejor legibilidad)
         Serial.print(mfrc522.uid.uidByte[i], HEX);                 //Pasa el UID a hexa.
