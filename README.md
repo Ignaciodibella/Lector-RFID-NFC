@@ -8,6 +8,17 @@ Ver el archivo conexiones.md donde se muestra el circuito a seguir para que func
 #### Conexiones implementadas para la versión V2-3
 ![conexiones arduino](https://raw.githubusercontent.com/Ignaciodibella/Lector-RFID-NFC/main/recursos/RFID-V2-3.png)
 
+Pines en orden (de arriba a bajo) de la placa RC522:
+SDA(SS) >> ~10 <br>
+SCK >> 13 <br>
+MOSI >> ~11 <br>
+MISO >> 12 <br>
+IRQ >> Sin conectar <br>
+GND >> GND <br>
+RST >> ~9 <br>
+3.3v >> 3.3v
+
+
 #### Mejoras a implementar:
 Se deberia implementar una base de datos con una tabla clientes (los dueños de las tarjetas) que incluya su nombre, apellido, UID asociado a su tarjeta, saldo y número de dni
 para poder hacer una validación de identidad. El cliente deberá ingresar por pantalla los últimos 3 dígitos de su dni. El atributo saldo almacenará el saldo cargado, del
