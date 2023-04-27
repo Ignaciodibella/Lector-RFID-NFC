@@ -20,8 +20,8 @@ CREATE TABLE Productos(
 )
 
 INSERT INTO Usuarios
-VALUES (41479427, 'Ignacio', 'Di Bella', '0620B265', 0, 1),
-	   (41479446, 'Agustin', 'Nabarlaz', 'D64DBE32', 0, 1)
+VALUES (111, 'Ignacio', 'Di Bella', '0620B265', 0, 1),
+	   (222, 'Agustin', 'Nabarlaz', 'D64DBE32', 0, 1)
 
 INSERT INTO Productos
 VALUES ('Vaso de Fernet', 600, 10),
