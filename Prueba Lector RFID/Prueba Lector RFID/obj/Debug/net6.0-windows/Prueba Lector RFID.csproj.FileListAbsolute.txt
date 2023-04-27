@@ -1,0 +1,26 @@
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\Prueba Lector RFID.exe
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\Prueba Lector RFID.deps.json
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\Prueba Lector RFID.runtimeconfig.json
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\Prueba Lector RFID.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\Prueba Lector RFID.pdb
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\System.IO.Ports.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.IO.Ports.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.csproj.AssemblyReference.cache
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba_Lector_RFID.Form1.resources
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.csproj.GenerateResource.cache
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.AssemblyInfoInputs.cache
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.AssemblyInfo.cs
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.csproj.CoreCompileInputs.cache
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.csproj.CopyComplete
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\refint\Prueba Lector RFID.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.pdb
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.genruntimeconfig.cache
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\ref\Prueba Lector RFID.dll
