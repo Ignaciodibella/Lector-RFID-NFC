@@ -23,6 +23,7 @@ Pines en orden (de arriba a bajo) de la placa RC522:
 
 #### Mejoras a implementar:
 - [x] Armar BD con Usuarios (dni, nombre, apellido, UDI asociado, saldo, activa[bool]) y Productos (id, nombre, precio unitario y stock).
+      <br>Ver archivo dummy_bd_rfid_test.sql
 - [ ] Armar un backend simple que se conecte a la BD.
 - [ ] Conectar backend con lector rfid.
 - [ ] Probar verificación con últimos 3 dígitos del dni.
