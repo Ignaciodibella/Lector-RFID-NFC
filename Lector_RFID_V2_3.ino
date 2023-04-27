@@ -47,9 +47,9 @@ void loop() {
       Serial.println();
 
       if (uid == uid_aceptado) {
-        alerta(1900, led_verde)
+        alerta(1900, led_verde);
       } else {
-        alerta(400, led_rojo)
+        alerta(400, led_rojo);
       }
 
       uid = "";
@@ -60,7 +60,7 @@ void loop() {
   }
 }
 
-void alerta(frec_pitido, led) {
+void alerta(int frec_pitido, int led) {
   noTone(buzzer);
   delay(300);                 //Delay entre leer tarjeta y sonar.
   tone(buzzer, frec_pitido);  //el segundo parámetro indica frecuencia. A mayor valor mas agudo y a menor mas grave el pitido.
