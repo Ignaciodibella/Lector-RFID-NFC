@@ -3,8 +3,6 @@
 El sistema lee una tarjeta apoyada en el sensor, leyendo su UID. Si el UID coincide con el UID harcodeado, se enciende un led verde y suena un buzzer (agudo).
 <br> En caso de que la tarjeta apoyada en el sensor no tenga el UID esperado enciende un led rojo y suena el buzzer (mas grave) indicando el rechazo de la tarjeta.
 
-Ver el archivo conexiones.md donde se muestra el circuito a seguir para que funcione el código implementado.
-
 #### Conexiones implementadas para la versión V2-3
 ![conexiones arduino](https://raw.githubusercontent.com/Ignaciodibella/Lector-RFID-NFC/main/recursos/RFID-V2-3.png)
 
