@@ -22,7 +22,10 @@ Pines en orden (de arriba a bajo) de la placa RC522:
 
 
 #### Mejoras a implementar:
-Se deberia implementar una base de datos con una tabla clientes (los dueños de las tarjetas) que incluya su nombre, apellido, UID asociado a su tarjeta, saldo y número de dni
-para poder hacer una validación de identidad. El cliente deberá ingresar por pantalla los últimos 3 dígitos de su dni. El atributo saldo almacenará el saldo cargado, del
-cual se irá descontando con cada compra de algún producto o entrada.
-Se debe tener una tabla de artículos con su nombre y precio unitario para poder simular una compra.
+- [x] Armar BD con Usuarios (dni, nombre, apellido, UDI asociado, saldo, activa[bool]) y Productos (id, nombre, precio unitario y stock).
+- [ ] Armar un backend simple que se conecte a la BD.
+- [ ] Conectar backend con lector rfid.
+- [ ] Probar verificación con últimos 3 dígitos del dni.
+- [ ] Cargar Saldo.
+- [ ] Comprar Producto (descuenta saldo usuario y descuenta stock producto) -> Agregar validaciones necesarias (saldo/stock insuficiente)
+- [ ] Anular Tarjeta (apaga el bit del atributo "activa" de un usuario) -> El saldo no se toca ya que queda asociado al usuario, luego se le asigna otro UID.
