@@ -14,7 +14,7 @@ namespace Prueba_Lector_RFID
         {
             InitializeComponent();
             Port = new System.IO.Ports.SerialPort();
-            Port.PortName = "COM4"; //Puerto serial USB a usar de la compu. (Revisar en el IDE de Arduino) 
+            Port.PortName = "COM3"; //Puerto serial USB a usar de la compu. (Revisar en el IDE de Arduino). Si está abierto el monitor serial de Arduino no funciona. Cerrarlo.
             Port.BaudRate = 9600; //Baudios. Tiene que coincidir con lo que pusimos en la linea Serial.Begin(...) en el programa del arduino.
             //Port.ReadTimeout = 500; //Medio segundo para cortar conexión por timeout.
 
@@ -51,7 +51,7 @@ namespace Prueba_Lector_RFID
                     txt_udi_receiver.Invoke(new MethodInvoker(
                         delegate
                         {
-                            txt_udi_receiver.Text = cadena.Remove(0, 10);  //Habria que quitar el Remove(0,10) y que el programa de arduino solo devuelva el UDI, sin cadenas previas.
+                            txt_udi_receiver.Text = cadena;
                         }));
                 }
                 catch { }
