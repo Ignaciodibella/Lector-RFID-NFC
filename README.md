@@ -25,7 +25,7 @@ Pines en orden (de arriba a bajo) de la placa RC522:
 - [x] Armar BD con Usuarios (dni, nombre, apellido, UDI asociado, saldo, activa[bool]) y Productos (id, nombre, precio unitario y stock).
       <br>Ver archivo dummy_bd_rfid_test.sql
 - [ ] Armar un backend simple que se conecte a la BD.
-- [ ] Conectar backend con lector rfid.
+- [x] Conectar backend con lector rfid.
 - [ ] Probar verificación con últimos 3 dígitos del dni.
 - [ ] Cargar Saldo.
 - [ ] Comprar Producto (descuenta saldo usuario y descuenta stock producto) -> Agregar validaciones necesarias (saldo/stock insuficiente)
