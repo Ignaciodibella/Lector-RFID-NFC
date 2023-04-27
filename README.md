@@ -9,14 +9,18 @@ Ver el archivo conexiones.md donde se muestra el circuito a seguir para que func
 ![conexiones arduino](https://raw.githubusercontent.com/Ignaciodibella/Lector-RFID-NFC/main/recursos/RFID-V2-3.png)
 
 Pines en orden (de arriba a bajo) de la placa RC522:
-SDA(SS) >> ~10 <br>
-SCK >> 13 <br>
-MOSI >> ~11 <br>
-MISO >> 12 <br>
-IRQ >> Sin conectar <br>
-GND >> GND <br>
-RST >> ~9 <br>
-3.3v >> 3.3v
+
+|PIN RC522 | PIN Arduino UNO R3|
+|----------|-------------------|
+|SDA(SS)   |~10                |
+|SCK       |13                 |
+|MOSI      |~11                |
+|MISO      |12                 |
+|IRQ       |Sin conectar       |
+|GND       |GND                |
+|RST       |~9                 |
+|3.3v      |3.3v               |
+
 
 
 #### Mejoras a implementar:
