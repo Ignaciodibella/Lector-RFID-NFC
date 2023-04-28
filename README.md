@@ -24,9 +24,9 @@ Pines en orden (de arriba a bajo) de la placa RC522:
 #### Mejoras a implementar:
 - [x] Armar BD con Usuarios (dni, nombre, apellido, UDI asociado, saldo, activa[bool]) y Productos (id, nombre, precio unitario y stock).
       <br>Ver archivo dummy_bd_rfid_test.sql
-- [ ] Armar un backend simple que se conecte a la BD.
+- [x] Armar un backend simple que se conecte a la BD.
 - [x] Conectar backend con lector rfid.
-- [ ] Probar verificación con últimos 3 dígitos del dni.
+- [x] Probar verificación con últimos 3 dígitos del dni. >> Faltan cargar dnis de longitud real.
 - [ ] Cargar Saldo.
 - [ ] Comprar Producto (descuenta saldo usuario y descuenta stock producto) -> Agregar validaciones necesarias (saldo/stock insuficiente)
 - [ ] Anular Tarjeta (apaga el bit del atributo "activa" de un usuario) -> El saldo no se toca ya que queda asociado al usuario, luego se le asigna otro UID.
