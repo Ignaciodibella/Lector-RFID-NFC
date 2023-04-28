@@ -24,3 +24,9 @@ D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\
 D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.pdb
 D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba Lector RFID.genruntimeconfig.cache
 D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\ref\Prueba Lector RFID.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
