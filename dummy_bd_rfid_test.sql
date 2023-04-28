@@ -1,13 +1,13 @@
-/*Dummy DB para probar interacción RFID/BackEnd/BD*/
+/*Dummy DB para probar interacciÃ³n RFID/BackEnd/BD*/
 CREATE DATABASE PruebaLectorRFID
 
 USE PruebaLectorRFID
-/*Cración de Tablas*/
+/*CraciÃ³n de Tablas*/
 CREATE TABLE Usuarios(
 	dni int NOT NULL PRIMARY KEY,
 	nombre varchar(100),
 	apellido varchar(50),
-	UID varchar(10),
+	UID varchar(20),
 	saldo float,
 	activa bit,
 )
@@ -20,8 +20,8 @@ CREATE TABLE Productos(
 )
 
 INSERT INTO Usuarios
-VALUES (111, 'Ignacio', 'Di Bella', '0620B265', 0, 1),
-	   (222, 'Agustin', 'Nabarlaz', 'D64DBE32', 0, 1)
+VALUES (111, 'Ignacio', 'Di Bella', '06 20 B2 65', 0, 1),
+	   (222, 'Agustin', 'Nabarlaz', 'D6 4D BE 32', 0, 1)
 
 INSERT INTO Productos
 VALUES ('Vaso de Fernet', 600, 10),
