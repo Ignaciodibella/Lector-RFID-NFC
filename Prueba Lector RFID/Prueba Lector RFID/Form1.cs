@@ -83,16 +83,24 @@ namespace Prueba_Lector_RFID
                 while (lector.Read())
                 {
 
-                    if (txt_3dni.Text == lector.GetValue(0).ToString())
+                    if (txt_3dni.Text == lector.GetValue(0).ToString()) //Falta que recorte la cadena de DNI y tome los ultimos 3 para comparar (de la bd).
                     {
-                        MessageBox.Show("Bienvenido a la Plataforma de NightOps " + lector.GetValue(1).ToString());
+                        //MessageBox.Show("Bienvenido a la Plataforma de NightOps " + lector.GetValue(1).ToString());
+                        PantallaUsuario pantallaUsuario = new PantallaUsuario();
+                        pantallaUsuario.UserName = lector.GetValue(1).ToString();
+                        pantallaUsuario.UsrUid = lector.GetValue(3).ToString();
+                        pantallaUsuario.Saldo = lector.GetValue(4).ToString();
+                        
+                        pantallaUsuario.Show();
+                        this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("Acceso Denegado");
+                        MessageBox.Show("Acceso Denegado"); //Habria que contar cantidad de intentos ya que con 3 dígitos es muy facil ingresar.
                     }
-                    
                 }
+
+
             }
             catch (Exception)
             {

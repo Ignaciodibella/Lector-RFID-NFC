@@ -30,3 +30,6 @@ D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\
 D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba_Lector_RFID.CargarSaldo.resources
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba_Lector_RFID.ComprarProductos.resources
+D:\UTN FRC\2023\Proyecto Final - PF - 5K3\Prueba Lector RFID\Prueba Lector RFID\obj\Debug\net6.0-windows\Prueba_Lector_RFID.PantallaUsuario.resources

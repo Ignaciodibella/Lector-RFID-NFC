@@ -39,11 +39,11 @@
             // 
             lbl_bienvenida.AutoSize = true;
             lbl_bienvenida.Font = new Font("Sitka Banner", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lbl_bienvenida.Location = new Point(162, 26);
+            lbl_bienvenida.ImageAlign = ContentAlignment.BottomLeft;
+            lbl_bienvenida.Location = new Point(161, 9);
             lbl_bienvenida.Name = "lbl_bienvenida";
-            lbl_bienvenida.Size = new Size(255, 58);
+            lbl_bienvenida.Size = new Size(0, 58);
             lbl_bienvenida.TabIndex = 0;
-            lbl_bienvenida.Text = "¡Hola Ignacio!";
             // 
             // btn_comprar
             // 
@@ -54,6 +54,7 @@
             btn_comprar.TabIndex = 1;
             btn_comprar.Text = "Comprar Productos";
             btn_comprar.UseVisualStyleBackColor = true;
+            btn_comprar.Click += btn_comprar_Click;
             // 
             // btn_cargar_saldo
             // 
@@ -64,6 +65,7 @@
             btn_cargar_saldo.TabIndex = 2;
             btn_cargar_saldo.Text = "Cargar Saldo";
             btn_cargar_saldo.UseVisualStyleBackColor = true;
+            btn_cargar_saldo.Click += btn_cargar_saldo_Click;
             // 
             // button3
             // 
@@ -97,16 +99,16 @@
             Controls.Add(lbl_bienvenida);
             Name = "PantallaUsuario";
             Text = "PantallaUsuario";
+            Load += PantallaUsuario_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label lbl_bienvenida;
         private Button btn_comprar;
         private Button btn_cargar_saldo;
         private Button button3;
         private Button button4;
+        public Label lbl_bienvenida;
     }
 }
